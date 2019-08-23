@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.santodomingostudios.healthhelper.RutinaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bordesredondos"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumen de la semana"
+            android:fontFamily="@font/montb"
+            android:layout_centerInParent="true"
+            android:textSize="24dp"
+            android:paddingLeft="25dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aqui esta toda tu actividad registrada esta semana"
+            android:fontFamily="@font/montr"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="8dp"
+        android:rowCount="1">
+
+        <!-- columna 1 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card1">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv1"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_pechadas" />-->
+
+                <TextView
+                    android:id="@+id/tv_tiempo_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montb"
+                    android:text="Plancha frontal"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv2"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_skipping" />-->
+
+                <TextView
+                    android:id="@+id/tv_calorias_quemadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montb"
+                    android:text="Sentadilla"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <!-- columna 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card3">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv3"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_flexiones_triceps" />-->
+
+                <TextView
+                    android:id="@+id/tv_distancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montr"
+                    android:text="Sentadilla"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card4">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv4"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="130dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_salto_tijera" />-->
+
+                <TextView
+                    android:id="@+id/tv_cantidad_pasos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montr"
+                    android:text="Sentadilla"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".ResumenActivity">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="0dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_titulo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="38dp"-->
+            <!--android:text="Resumen"-->
+            <!--android:textColor="@color/foreground_material_dark"-->
+            <!--android:textSize="35dp" />-->
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_tiempo_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginTop="185dp"-->
+            <!--android:text="Tiempo total caminado"-->
+            <!--android:textColor="@color/foreground_material_dark" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_calorias_quemadas"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Calorias quemadas en total"-->
+            <!--android:textColor="@color/foreground_material_dark" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_distancia"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="194dp"-->
+            <!--android:text="Distancia total"-->
+            <!--android:textColor="@color/foreground_material_dark" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_cantidad_pasos"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="126dp"-->
+            <!--android:text="Cantidad de pasos caminados"-->
+            <!--android:textColor="@color/foreground_material_dark" />-->
+
+    <!--</RelativeLayout>-->
+<!--</android.support.constraint.ConstraintLayout>-->
+
+

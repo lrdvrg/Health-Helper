@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bordesredondos"
+        android:paddingLeft="25dp"
+        android:text="@string/mensaje_inicio"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:id="@+id/lytInicioActividades"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:onClick="inicioActividad"
+                android:clickable="true"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imgActividades"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/iniciaractividad" />
+
+                <TextView
+                    android:id="@+id/tvMenuActividad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgActividades"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/inicio_actividad"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:onClick="inicioCuidado">
+
+                <ImageView
+                    android:id="@+id/imgMedicina"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/medicamentos" />
+
+                <TextView
+                    android:id="@+id/tvMenuMedicina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgMedicina"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/inicio_medicamentos"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:onClick="inicioResumen">
+
+
+                <ImageView
+                    android:id="@+id/imgResumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resumen2" />
+
+                <TextView
+                    android:id="@+id/tvMenuResumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgResumen"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/inicio_resumen"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:onClick="inicioRutina">
+
+                <ImageView
+                    android:id="@+id/imgRutinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutinas" />
+
+                <TextView
+                    android:id="@+id/tvMenuRutinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgRutinas"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/inicio_rutinas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:onClick="inicioPerfil">
+
+                <ImageView
+                    android:id="@+id/imgPerfiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/perfil" />
+
+                <TextView
+                    android:id="@+id/tvMenuPerfiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgPerfiles"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/inicio_perfiles"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".MainActivity">-->
+
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.v7.widget.LinearLayoutCompat-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="0dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvNombre"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/bordesredondos"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:text="@string/mensaje_inicio"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="24dp" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/lytInicioActividades"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="125dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/bordesredondos"-->
+            <!--android:onClick="inicioActividad"-->
+            <!--android:clickable="true"-->
+            <!--android:elevation="5dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgActividades"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/iniciaractividad" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvMenuActividad"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgActividades"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/inicio_actividad"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20dp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="125dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/bordesredondos"-->
+            <!--android:clickable="true"-->
+            <!--android:elevation="5dp"-->
+            <!--android:onClick="inicioCuidado">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgMedicina"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/medicamentos" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvMenuMedicina"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgMedicina"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/inicio_medicamentos"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20dp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="125dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/bordesredondos"-->
+            <!--android:clickable="true"-->
+            <!--android:onClick="inicioResumen"-->
+            <!--android:elevation="5dp">-->
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgResumen"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/resumen2" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvMenuResumen"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgResumen"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/inicio_resumen"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20dp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="125dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/bordesredondos"-->
+            <!--android:clickable="true"-->
+            <!--android:elevation="5dp"-->
+            <!--android:onClick="inicioRutina">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgRutinas"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/rutinas" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvMenuRutinas"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgRutinas"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/inicio_rutinas"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20dp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="125dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/bordesredondos"-->
+            <!--android:clickable="true"-->
+            <!--android:elevation="5dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgPerfiles"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/perfil" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvMenuPerfiles"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgPerfiles"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/inicio_perfiles"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20dp" />-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.LinearLayoutCompat>-->
+<!--</ScrollView>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->

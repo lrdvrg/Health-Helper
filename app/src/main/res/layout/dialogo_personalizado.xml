@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/montb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Plancha frontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_below="@+id/titulo"
+        android:id="@+id/imagenview"
+        android:layout_width="176dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/bordesredondos"
+        android:src="@drawable/rutina_skipping" />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_below="@+id/imagenview"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/montr"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:justificationMode="inter_word"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:text="4 series de 30 repeticiones. Este ejercicio se utiliza mucho en los calentamientos para activar la circulación, como ejercicio de coordinación y para fortalecer el tren inferior donde la musculatura extensora del tobillo y la flexora de la cadera trabajan con gran intensidad."
+        android:textColor="@color/colorPrimary" />
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:background="@android:color/holo_orange_dark"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="20dp"-->
+    <!--android:text="Listo" />-->
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="400dp"-->
+    <!--android:layout_gravity="center_vertical|center_horizontal">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/titulo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="27dp"-->
+        <!--android:text="Plancha frontal"-->
+        <!--android:textColor="@color/colorNaranja"-->
+        <!--android:textSize="35dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_below="@+id/titulo"-->
+        <!--android:id="@+id/imagenview"-->
+        <!--android:layout_width="176dp"-->
+        <!--android:layout_height="147dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="84dp"-->
+        <!--android:background="@drawable/bordesredondos"-->
+        <!--android:src="@drawable/rutina_skipping" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/mensaje"-->
+        <!--android:layout_below="@+id/imagenview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:justificationMode="inter_word"-->
+        <!--android:padding="15dp"-->
+        <!--android:text="4 series de 30 repeticiones. Este ejercicio se utiliza mucho en los calentamientos para activar la circulación, como ejercicio de coordinación y para fortalecer el tren inferior donde la musculatura extensora del tobillo y la flexora de la cadera trabajan con gran intensidad."-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/button"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@android:color/holo_orange_dark"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/colorPrimary"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Listo" />&ndash;&gt;-->
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicio_medicas">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/tvNombreMedicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:paddingLeft="25dp"
+                android:text="@string/mensaje_medicina"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:id="@+id/lytPrescripciones"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:onClick="menuPrescripcion"
+                android:clickable="true"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imgPrescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prescripciones" />
+
+                <TextView
+                    android:id="@+id/tvMedicinaPrescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgPrescripcion"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/medicina_prescripciones"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytCitas"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:onClick="menuCitas"
+                android:clickable="true"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imgCitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/citasmedicas"/>
+
+                <TextView
+                    android:id="@+id/tvCitasMedicas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgCitas"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/medicina_citas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>

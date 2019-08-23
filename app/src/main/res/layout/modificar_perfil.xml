@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregar_prescripcion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="36dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bordesredondos"
+                android:elevation="5dp">
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Escriba su nombre"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/MyHintText"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/montr"
+                    >
+
+                <EditText
+                    android:id="@+id/evNombre"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:hint="Nombre"
+                    android:fontFamily="@font/montr"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/sexo"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Seleccione su sexo"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/altura"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Seleccione su altura"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <SeekBar
+                    android:id="@+id/seekBarA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="220"
+                    android:min="120"/>
+
+                <TextView
+                    android:id="@+id/tvAltura"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="179 cm"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <TextView
+                    android:id="@+id/peso"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Seleccione su peso"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <SeekBar
+                    android:id="@+id/seekBarP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="400"
+                    android:min="20"/>
+
+                <TextView
+                    android:id="@+id/tvPeso"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="125 lbs"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <TextView
+                    android:id="@+id/edad"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Seleccione su edad"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+                <SeekBar
+                    android:id="@+id/seekBarE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:min="0"/>
+
+                <TextView
+                    android:id="@+id/tvedad"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="16"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montb"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/modificarPerfil"
+                android:layout_width="340dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bordesredondos"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="@string/modificar"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/black"
+                android:textSize="26sp"
+                android:fontFamily="@font/montb"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

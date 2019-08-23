@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.santodomingostudios.healthhelper.RutinaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bordesredondos"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msgRutinas"
+            android:fontFamily="@font/montb"
+            android:layout_centerInParent="true"
+            android:textSize="24dp"
+            android:paddingLeft="25dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infRutinas"
+            android:fontFamily="@font/montr"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="8dp"
+        android:rowCount="2">
+
+        <!-- columna 1 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card1">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgv1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/rutina_pechadas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Plancha frontal"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:id="@+id/tv1"
+                    android:fontFamily="@font/montb"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgv2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/rutina_skipping" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sentadilla"
+                    android:fontFamily="@font/montb"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:id="@+id/tv2"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <!-- columna 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card3">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgv3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/rutina_flexiones_triceps" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sentadilla"
+                    android:fontFamily="@font/montr"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:id="@+id/tv3"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:id="@+id/card4">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgv4"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/rutina_salto_tijera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sentadilla"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montr"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:id="@+id/tv4"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="10"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--tools:context="com.santodomingostudios.healthhelper.RutinaActivity">-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="2">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Rutina del dia"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="30dp"-->
+            <!--android:textColor="@android:color/black"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<GridLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="8"-->
+        <!--android:alignmentMode="alignMargins"-->
+        <!--android:columnCount="2"-->
+        <!--android:columnOrderPreserved="false"-->
+        <!--android:padding="15dp"-->
+        <!--android:rowCount="2">-->
+
+        <!--&lt;!&ndash; columna 1 &ndash;&gt;-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--app:cardBackgroundColor="@android:color/background_light"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:cardElevation="10dp"-->
+            <!--android:id="@+id/card1">-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginBottom="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv1"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_pechadas" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Plancha frontal"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:id="@+id/tv1"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</RelativeLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--app:cardBackgroundColor="@android:color/background_light"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:cardElevation="10dp"-->
+            <!--android:id="@+id/card2">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginBottom="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv2"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_skipping" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Sentadilla"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:id="@+id/tv2"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <!--&lt;!&ndash; columna 2 &ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--app:cardBackgroundColor="@android:color/background_light"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:cardElevation="10dp"-->
+            <!--android:id="@+id/card3">-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginBottom="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv3"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_flexiones_triceps" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Sentadilla"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:id="@+id/tv3"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</RelativeLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--app:cardBackgroundColor="@android:color/background_light"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:cardElevation="10dp"-->
+            <!--android:id="@+id/card4">-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginBottom="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgv4"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+
+                    <!--android:src="@drawable/rutina_salto_tijera" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Sentadilla"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:id="@+id/tv4"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</RelativeLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+    <!--</GridLayout>-->
+
+<!--</LinearLayout>-->

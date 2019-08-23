@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfiles">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordesredondos"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/montb"
+            android:text="@string/msgPerfil"
+            android:textColor="@android:color/black"
+            android:textSize="24dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bordesredondos"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:id="@+id/msgInformacion"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bordesredondos"
+                        android:fontFamily="@font/montb"
+                        android:gravity="center"
+                        android:text="@string/msgInformacion"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="8"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="2"
+                        android:columnOrderPreserved="true"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="50dp"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/sexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="Masculino"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/edad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="16 años"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/peso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="125 lbs"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/altura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="179 cm"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bordesredondos"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:id="@+id/msgHitos"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bordesredondos"
+                        android:fontFamily="@font/montb"
+                        android:gravity="center"
+                        android:text="@string/msgHitos"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="8"
+                        android:alignmentMode="alignMargins"
+                        android:paddingBottom="5dp"
+                        android:elevation="5dp">
+
+                        <TextView
+                            android:id="@+id/tvmaxPasos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Cantidad de pasos"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/maxPasos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/tvmaxPasos"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="3552"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tvMaxDistancia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvmaxPasos"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Distancia"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/maxDistancia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/tvMaxDistancia"
+                            android:layout_below="@+id/maxPasos"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="12 km"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tvmaxCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvMaxDistancia"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Calorias perdidas"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/maxCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/tvmaxCal"
+                            android:layout_below="@+id/tvMaxDistancia"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="3256 cal"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bordesredondos"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:id="@+id/msgGlobal"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bordesredondos"
+                        android:fontFamily="@font/montb"
+                        android:gravity="center"
+                        android:text="@string/msgGlobal"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="8"
+                        android:alignmentMode="alignMargins"
+                        android:paddingBottom="5dp"
+                        android:elevation="5dp">
+
+                        <TextView
+                            android:id="@+id/tvglobPasos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Cantidad de pasos"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/globPasos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/tvglobPasos"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="43472"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tvglobDistancia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvglobPasos"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Distancia"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/globDistancia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/tvglobDistancia"
+                            android:layout_below="@+id/globPasos"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="243 km"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tvglobCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvglobDistancia"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Calorias perdidas"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/globCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/tvglobCal"
+                            android:layout_below="@+id/tvglobDistancia"
+                            android:background="@drawable/bordesredondos"
+                            android:fontFamily="@font/montr"
+                            android:gravity="center"
+                            android:text="23124 cal"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="modificar"
+                    android:onClick="ModificarPerfil"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

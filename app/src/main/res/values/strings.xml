@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Health Helper</string>
+    <string name="inicio_actividad">Iniciar actividad</string>
+    <string name="inicio_medicamentos">Cuidado medicinal</string>
+    <string name="inicio_resumen">Resumen semanal</string>
+    <string name="inicio_rutinas">Rutinas diarias</string>
+    <string name="inicio_perfiles">Perfil</string>
+    <string name="mensaje_inicio">Health Helper</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="volver">Volver</string>
+
+
+    <string name="mensaje_actividades">Empiece una actividad</string>
+
+    <string name="mensaje_medicina">¿Que desea administrar?</string>
+    <string name="actividad_caminar">Caminar</string>
+    <string name="actividad_correr">Correr</string>
+    <string name="actividad_ciclismo">Ciclismo</string>
+    <string name="medicina_prescripciones">Prescripciones</string>
+    <string name="medicina_citas">Citas medicas</string>
+
+    <string name="msgIngreso">Nombre del medicamento</string>
+    <string name="msgSeleccione">Seleccione la fecha</string>
+    <string name="msgSeleccioneH">Seleccione la hora</string>
+    <string name="agregar">Agregar</string>
+    <string name="formato_hora">hh:mm</string>
+    <string name="title_activity_resumen">ResumenActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="msgCitas">Complete los campos</string>
+    <string name="msgRutinas">Rutinas del dia</string>
+    <string name="infRutinas">Estas son las rutinas que les sugerimos para el dia de hoy.</string>
+    <string name="msgPerfil">Tu perfil</string>
+    <string name="msgInformacion">Informacion personal</string>
+    <string name="msgHitos">Marcas personales</string>
+    <string name="msgGlobal">Marcas globales</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="modificar">Actualizar</string>
+
+
+</resources>

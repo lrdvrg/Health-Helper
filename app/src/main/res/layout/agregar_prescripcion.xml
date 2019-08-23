@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregar_prescripcion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="36dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bordesredondos"
+                android:elevation="5dp">
+            <TextView
+                android:id="@+id/msgIngreso"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/msgIngreso"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:elevation="5dp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/MyHintText"
+                android:textColor="@android:color/black">
+
+                <EditText
+                    android:id="@+id/etEvento"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:hint="Medicamento"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:theme="@style/MyEditText" />
+
+            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bordesredondos"
+            android:elevation="5dp">
+
+            <TextView
+                android:id="@+id/msgSeleccione"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordesredondos"
+                android:gravity="center"
+                android:text="@string/msgSeleccione"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <CalendarView
+                android:id="@+id/cvCalendario"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"/>
+
+          </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnHora"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bordesredondos"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="Seleccionar hora"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:onClick="obtenerHora"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/msgSeleccioneH"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bordesredondos"
+                    android:gravity="center"
+                    android:text="@string/msgSeleccioneH"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvHora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:id="@+id/separador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:id="@+id/tvMinuto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="340dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bordesredondos"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="@string/agregar"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
